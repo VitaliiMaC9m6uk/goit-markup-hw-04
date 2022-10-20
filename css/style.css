@@ -96,6 +96,29 @@ address{
 .head-list .mail:not(:last-child){
     margin-right: 50px;
 }
+.head-list .mail{
+    display: flex;
+    align-items: center;
+}
+.head-list .mail::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;   
+    margin-right: 10px;    
+}
+.icon-mail::before{
+    content: "";
+    background-image: url(../images/letter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-tel::before{
+    content: "";
+    background-image: url(../images/mobil.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .link:focus{
     color: var(--logo-blue-color);
 }
@@ -171,6 +194,36 @@ address{
 .features{
     display: flex;
     justify-content: space-evenly;
+}
+.features-icon::before{
+    content: "";
+    height: 120px;    
+    display: block;
+    background-color: var(--button-bg-port);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-antenna::before{
+    content: "";
+    background-image: url(../images/antenna.svg);
+    
+}
+.icon-clock::before {
+    content: "";
+    background-image: url(../images/clock.svg);
+    
+}
+.icon-diagram::before {
+    content: "";
+    background-image: url(../images/diagram.svg);
+
+}
+.icon-astronaut::before {
+    content: "";
+    background-image: url(../images/astronaut.svg);
+
 }
 .list .text{
     line-height: 1.71;
