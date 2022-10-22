@@ -7,6 +7,7 @@
     --bg-color:#2F303A;
     --footer-mail:rgba(255, 255, 255, 0.6);
     --button-bg-port:#F5F4FA;
+    --icon-color:#AFB1B8;
 }
 /* Container */
 .container{    
@@ -263,9 +264,8 @@ address{
 }
 .title-name{
     color: var(--title-color);
-    font-weight: 500; 
+    font-weight: 500;     
     
-    margin-top: 30px;
     margin-bottom: 10px;    
 }
 .team .text,
@@ -276,6 +276,10 @@ address{
     text-align: center;
 }
 .team .text{
+    margin-bottom: 16px;
+}
+.team-name{
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .one-of-team {
@@ -286,7 +290,23 @@ address{
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+.client{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.title-client{        
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
 
+    margin:0;
+    margin-bottom: 50px;
+    padding:0;
+
+}
 /* Подвал */
 .logo-white{
     color: var(--white-color);
@@ -399,13 +419,42 @@ address{
 /* Іконки соц.*/
 .action{
     display: flex;
-    padding:0;
-    margin:0;
-    outline: 1px solid #000;
+    padding:0 32px;
+    margin:0;    
     list-style: none;
 }
 .icon-social{
-    height: 44px;
-    width: 44px;
+    height: 20px;
+    width: 20px;    
+    padding:12px;   
+    fill:var(--icon-color);
+}
+.link-icon{    
     border-radius: 50%;
+    margin: 0;
+    padding: 0;       
+    width: 44px;
+    height: 44px;
+    display: block; 
+    
+}
+.list-icon:not(:last-child){
+    margin-right: 10px;
+}
+.icon-social:hover{
+    fill: #FFFFFF;   
+}
+.link-icon:hover{
+    background-color:#2196F3 ;
+    border-radius: 50%;
+}
+/* Клієнти */
+.action-client{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.icon-client{
+    fill:var(--icon-color);
 }
