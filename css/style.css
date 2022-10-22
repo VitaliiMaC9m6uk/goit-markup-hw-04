@@ -101,30 +101,27 @@ address{
     display: flex;
     align-items: center;
 }
-.head-list .mail::before{
-    display: inline-block;
-    content: "";
-    width: 20px;
-    height: 20px;   
-    margin-right: 10px;    
+
+.icon-mail,
+.icon-mobil{
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: var(--text-color);
 }
-.icon-mail::before{
-    content: "";
-    background-image: url(../images/letter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon-tel::before{
-    content: "";
-    background-image: url(../images/mobil.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.icon-mobil{
+    height: 16px;
+    width: 10px;
 }
 .link:focus{
     color: var(--logo-blue-color);
 }
 .link:hover{
     color: var(--logo-blue-color);
+}
+.link:hover .icon-mail,
+.link:hover .icon-mobil{
+    fill: var(--logo-blue-color);
 }
 .head-list{
     display: flex;
@@ -336,6 +333,20 @@ address{
 .bg-footer .mail:not(:last-child){
     margin-bottom: 9px;
 }
+.title-footer{        
+    font-weight: 700;        
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    color:var(--white-color);
+}
+.footer-address{
+    display: flex;
+}
+.address-mail{
+    margin-right: 70px;
+}
+
 /* portfolio */
 .button-port{
     font-style: normal;
@@ -417,34 +428,48 @@ address{
      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* Іконки соц.*/
-.action{
+.action,
+.action-footer{
     display: flex;
-    padding:0 32px;
+    padding:0;
     margin:0;    
     list-style: none;
 }
-.icon-social{
+.action{
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.icon-social,
+.icon-footer{
     height: 20px;
     width: 20px;    
-    padding:12px;   
-    fill:var(--icon-color);
+    padding:12px;
+    fill:var(--white-color);      
 }
-.link-icon{    
+.icon-social{
+    fill: var(--icon-color);
+}
+.link-icon,
+.link-footer{    
     border-radius: 50%;
     margin: 0;
     padding: 0;       
     width: 44px;
     height: 44px;
-    display: block; 
-    
+    display: block;     
 }
-.list-icon:not(:last-child){
+.link-footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.list-icon:not(:last-child),
+.list-footer:not(:last-child){
     margin-right: 10px;
 }
 .icon-social:hover{
     fill: #FFFFFF;   
 }
-.link-icon:hover{
+.link-icon:hover,
+.link-footer:hover{
     background-color:#2196F3 ;
     border-radius: 50%;
 }
@@ -457,4 +482,23 @@ address{
 }
 .icon-client{
     fill:var(--icon-color);
+    width: 106px;
+    height: 60px;
+    padding: 16px 32px;
+}
+.link-client{
+    border: 1px solid #AFB1B8;
+    height: 92px;
+    width: 170px;
+    display: block;
+    border-radius: 4px;
+}
+.link-client:hover{
+    border-color:var(--logo-blue-color);
+}
+.link-client:hover .icon-client{
+    fill: var(--logo-blue-color);
+}
+.list-client:not(:last-child){
+    margin-right: 30px;
 }
