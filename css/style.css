@@ -206,7 +206,7 @@ address{
     align-items: center;
     justify-content: center;
     height: 120px;
-    width: 270px;
+    
 }
 .list .text{
     line-height: 1.71;
@@ -445,7 +445,7 @@ address{
 .list-footer:not(:last-child){
     margin-right: 10px;
 }
-.icon-social:hover{
+.link-icon:hover .icon-social{
     fill: #FFFFFF;   
 }
 .link-icon:hover,
