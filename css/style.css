@@ -13,7 +13,7 @@
 .container{    
     margin-left:auto;
     margin-right:auto;
-    width:1230px;
+    width:1200px;
     padding-left:15px;
     padding-right:15px;
 }
@@ -54,6 +54,11 @@ address{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+/* Img */
+img{
+    display: block;
+    max-width: 100%,
 }
 /* Шапка */
 .logo,
@@ -150,15 +155,29 @@ address{
 }
 .block-service{
     display: flex;
-    flex-direction: column;
-
-    
+    flex-direction: column;    
+}
+.hero{
+    background-color: #C4C4C4;
 }
 .bg-service{
-    background-image: url(../images/bg-people.jpg);
-
+    max-width: 1600px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    background-image:
+    linear-gradient(to right ,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+     url(../images/bg-people.jpg);
+    
+    
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;   
 }
 .button{
     min-width: 216px;
@@ -191,7 +210,7 @@ address{
 }
 .features{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .icon-features{
     height: 70px;
@@ -200,12 +219,13 @@ address{
 .border-icon{
     border: none;
     border-radius: 4px;
-    background-color: var(--button-bg-port);
-    margin-bottom: 30px;
+    background-color: var(--button-bg-port);    
     display: flex;
     align-items: center;
     justify-content: center;
     height: 120px;
+
+    margin-bottom: 30px;
     
 }
 .list .text{
@@ -333,20 +353,26 @@ address{
 }
 
 /* portfolio */
+.list-btn:first-child .button-port {
+    padding: 6px 25px;
+}
 .button-port{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    padding: 6px 22px;
+    border:none;
      
     border-radius: 4px;
     border-color: transparent;
     font-family: Roboto,sans-serif;
     cursor: pointer;    
 }
+
 .list-btn:not(:last-child){
-    margin-right:8px;
+    padding-right:8px;
 }
 .btn-port{  
     margin-bottom: 50px;
@@ -481,5 +507,5 @@ address{
     fill: var(--logo-blue-color);
 }
 .list-client:not(:last-child){
-    margin-right: 30px;
+    padding-right: 30px;
 }
